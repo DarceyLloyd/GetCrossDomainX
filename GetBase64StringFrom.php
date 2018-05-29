@@ -59,6 +59,10 @@ if (isset($_GET["mime"])){
 		case "3gp": $mime = "video/3gpp"; break;
 		case "tga": $mime = "image/tga"; break;
 		case "otf": $mime = "font/opentype"; break;
+		case "json": $mime = "application/json"; break;
+		case "csv": $mime = "text/csv"; break;
+		case "tsv": $mime = "text/tsv"; break;
+
 		default:
 			echo("Unsupoorted file extensions, please set the mime type manually via the mime parameter...");
 			die();
